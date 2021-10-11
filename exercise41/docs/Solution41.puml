@@ -1,0 +1,7 @@
+@startuml
+class Solution41{
+    String[] fileIO(String filename)
+    String[] sortNames(String[] names)
+}
+
+@enduml
