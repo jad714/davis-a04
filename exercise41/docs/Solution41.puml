@@ -1,7 +1,8 @@
 @startuml
 class Solution41{
-    String[] fileIO(String filename)
-    String[] sortNames(String[] names)
+    -fileIO():List<String>
+    +sortNames():List<String>
+    -printNames()
 }
 
 @enduml
