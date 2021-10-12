@@ -1,0 +1,22 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solutions
+ *  Copyright 2021 Joshua Davis
+ */
+
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class Solution42{
+    main(String[])
+    ' FileScanner fs = new FileScanner()
+    ' fs.readFile
+    ' fs.printData
+}
+
+Class FileScanner{
+    -String[][] employeeData
+    +readFile(String filename)
+    +printData()
+}
+Solution42 --o FileScanner
+@enduml
