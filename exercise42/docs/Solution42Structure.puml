@@ -14,9 +14,13 @@ Class Solution42{
 }
 
 Class FileScanner{
-    -String[][] employeeData
+    -List<String> employeeFNames
+    -List<String> employeeLNames
+    -List<string> employeeSalary
+
     +readFile(String filename)
     +printData()
+    +getFNames()
 }
 Solution42 --o FileScanner
 @enduml

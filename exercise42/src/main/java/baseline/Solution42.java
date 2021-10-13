@@ -7,9 +7,11 @@ package baseline;
 
 public class Solution42 {
     public static void main(String[] args){
-        // Instantiate new Solution24 object.
-        // Instantiate new FileScanner object with argument matching filename with relative pathing.
+        // Instantiate new FileScanner object.
+        FileScanner fs = new FileScanner();
         // Call readFile from FileScanner and collect the data from the file.
+        fs.readFile("data/exercise42_input.txt");
         // Print the information.
+        fs.printData();
     }
 }
