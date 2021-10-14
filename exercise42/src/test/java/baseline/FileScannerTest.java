@@ -36,7 +36,6 @@ class FileScannerTest {
         /* Success of this test will confirm not only that the file was opened and read properly,
         but also that the "split" is functioning properly, as these names were in the center of the list.
         If the test list matches the production list, we're golden. */
-        List<String> compListTest = new ArrayList<>();
         assertEquals(fileInputTest1, fsTest.getLNames());
         assertEquals(fileInputTest2, fsTest.getFNames());
         assertEquals(fileInputTest3, fsTest.getSalaries());
