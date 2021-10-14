@@ -16,8 +16,7 @@ public class FileScanner {
     private final List<String> employeeSalary = new ArrayList<>();
 
     public void readFile(String filename){
-        // Performs the reading of the file and returns a 2D array with all of the data.
-        // Instantiate new Scanner
+        // Performs the reading of the file with all of the data, and updates the lists.
         try{
             // Instantiate new scanner for the file.
             Scanner fileIO = new Scanner(new File(filename));
@@ -47,8 +46,15 @@ public class FileScanner {
     }
 
     public List<String> getFNames(){
-        /* Note: This method is exclusively used for testing in this case but could be used
-        in conjunction with getters for the rest if such was the client's desires. */
+        /* Note: This method is exclusively used for testing in this case , as are the ones below. */
         return employeeFNames;
+    }
+
+    public List<String> getLNames(){
+        return employeeLNames;
+    }
+
+    public List<String> getSalaries(){
+        return employeeSalary;
     }
 }

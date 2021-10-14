@@ -21,6 +21,8 @@ Class FileScanner{
     +readFile(String filename)
     +printData()
     +getFNames()
+    +getLNames()
+    +getSalaries()
 }
 Solution42 --o FileScanner
 @enduml
