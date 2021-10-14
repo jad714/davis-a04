@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class Solution43{
+    +main(String[])
+    ' Instantiate website generator.
+    ' Call the folderCreator method and Website generator will take care of the rest.
+}
+
+Class WebsiteGenerator{
+    +WebsiteGenerator()
+    +folderCreator()
+    -indexCreator()
+}
+
+Solution43 --o WebsiteGenerator
+@enduml
