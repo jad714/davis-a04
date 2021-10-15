@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Class Solution44{
+    +main(String[])
+}
+
+Class ProductSearch{
+    +parseJson(): Map<String, String>
+    +productSearch(): boolean
+    +displayResults()
+}
+
+Solution44 --o ProductSearch
+@enduml
