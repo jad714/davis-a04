@@ -8,6 +8,11 @@ Class Solution43{
 }
 
 Class WebsiteGenerator{
+    -String jsAns
+    -String cssAns
+    -String author
+    -String site
+    -String createdConstant
     +WebsiteGenerator()
     +folderCreator()
     -indexCreator()
