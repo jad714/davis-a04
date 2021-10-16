@@ -7,7 +7,8 @@
 of writing this program, I have structured my files to be written with data
 as the parent directory for "website" and everything else contained within.
 At the time of your opening this program, data should be EMPTY (to provide you with a clean
-slate for your own testing), and should be ready for you to run. */
+slate for your own testing), and should therefore not be tracked by GitHub. However, once you
+run the program, the "data" folder and all of the required contents should populate as specified by the user. */
 
 package baseline;
 
@@ -24,8 +25,10 @@ public class Solution43{
         System.out.print("Author: ");
         String author = userInput.nextLine();
         System.out.print("Do you want a folder for JavaScript? ");
+        // Keep track of bad input so I can yell at the user for it after the first time.
         int badInputCount = 0;
         String jsAns = "";
+        // Loop for bad input until correct input is given (case insensitive).
         while(!jsAns.equals("y")&&!jsAns.equals("n")){
             if(badInputCount>0){
                 System.out.print("Invalid input. Please enter 'y' or 'n': ");
