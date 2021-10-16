@@ -1,0 +1,24 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solutions
+ *  Copyright 2021 Joshua Davis
+ */
+
+
+@startuml
+'https://plantuml.com/sequence-diagram
+Class Solution45{
+    +main(String[])
+}
+
+Class WordReplacer{
+    -readFileName
+    -writeFileName
+    -toRemove
+    -replacement
+    -readFile():String
+    -replaceString(String):String
+    +processOutput()
+}
+
+Solution45 --o WordReplacer
+@enduml
