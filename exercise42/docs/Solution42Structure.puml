@@ -20,9 +20,9 @@ Class FileScanner{
 
     +readFile(String filename)
     +printData()
-    +getFNames()
-    +getLNames()
-    +getSalaries()
+    +getFNames():List<String>
+    +getLNames()List<String>
+    +getSalaries()List<String>
 }
 Solution42 --o FileScanner
 @enduml
