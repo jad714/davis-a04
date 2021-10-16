@@ -16,6 +16,7 @@ public class Solution41 {
     private List<String> fileIO(String filename){
         // Scans file for names and return an array of strings containing the names to be sorted. Return the String array.
         List<String> data = new ArrayList<>();
+        // Try to open the file, catch the FileNotFound exception and gracefully exit the program if not found.
         try{
             Scanner fileIO = new Scanner(new File(filename));
             while(fileIO.hasNextLine()){
@@ -25,8 +26,7 @@ public class Solution41 {
         }
         catch(FileNotFoundException e){
             System.err.println("Could not locate file!");
-            e.printStackTrace();
-            System.exit(-1);
+            System.exit(0);
         }
         return data;
     }
