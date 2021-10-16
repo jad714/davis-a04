@@ -5,10 +5,30 @@ Class Solution44{
 }
 
 Class ProductSearch{
-    +parseJson(): Map<String, String>
-    +productSearch(): boolean
+    +Inventory inventory
+    +String filePath
+    +parseJson()
     +displayResults()
 }
 
+Class Products{
+    -String name
+    -double price
+    -int quantity
+    +getName():String
+    +getPrice():double
+    +getQuantity():int
+    +isFound():boolean
+}
+
+Class Inventory{
+    +List<Products> products
+    +getProducts():products
+}
+
+
+
 Solution44 --o ProductSearch
+ProductSearch --o Inventory
+Inventory --o Products
 @enduml

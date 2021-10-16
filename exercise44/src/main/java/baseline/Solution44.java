@@ -7,6 +7,9 @@ package baseline;
 
 public class Solution44 {
     public static void main(String[] args){
+        // Instantiate new ProductSearch with the path of the json file as argument.
+        ProductSearch searchProduct = new ProductSearch("data/exercise44_input.json");
         // Call the displayResults function to execute the entire program.
+        searchProduct.displayResults();
     }
 }

@@ -1,0 +1,7 @@
+{
+    "products" : [
+        {"name": "testItem1", "price": 25.00, "quantity": 5 },
+        {"name": "testItem2", "price": 15.00, "quantity": 5 },
+        {"name": "testItem3", "price": 5.00, "quantity": 10 }
+    ]
+}
