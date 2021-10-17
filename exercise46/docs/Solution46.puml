@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Class Solution46{
+    +main(String[])
+}
+
+Class WordFrequency{
+    -uniqueWords
+    -filePathString
+    +readFile():List<String>
+    +frequencyCounter(String, List<String>):int
+    +processOutput()
+}
+
+Solution46 --o WordFrequency
+
+@enduml
