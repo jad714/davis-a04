@@ -6,9 +6,11 @@ Class Solution46{
 
 Class WordFrequency{
     -uniqueWords
+    -entireFile
     -filePathString
     +readFile():List<String>
-    +frequencyCounter(String, List<String>):int
+    +frequencyCounter(String):int
+    +uniqueWordListCretaor():List<String>
     +processOutput()
 }
 
